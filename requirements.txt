@@ -3,3 +3,5 @@ requests
 beautifulsoup4
 lxml
 urllib3
+pytest>=7.0
+flake8>=6.0

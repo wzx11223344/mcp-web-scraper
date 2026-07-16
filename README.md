@@ -1,5 +1,7 @@
 # MCP网页抓取服务器
 
+[![CI](https://github.com/wzx11223344/mcp-web-scraper/actions/workflows/ci.yml/badge.svg)](https://github.com/wzx11223344/mcp-web-scraper/actions/workflows/ci.yml)
+
 一个基于FastMCP框架的功能全面的网页抓取MCP服务器，提供26个工具，覆盖网页获取、HTML解析、数据提取和辅助工具四大模块。所有工具返回Markdown格式字符串，可直接用于MCP客户端集成。
 
 ## 特性
@@ -180,6 +182,21 @@ mcp-web-scraper/
 ├── requirements.txt   # Python依赖列表
 ├── README.md          # 项目文档
 └── SKILL.md           # SkillHub技能描述
+```
+
+## 测试
+
+运行单元测试：
+
+```bash
+pip install pytest flake8
+pytest tests/ -v --tb=short
+```
+
+代码质量检查：
+
+```bash
+flake8 . --count --max-line-length=120 --statistics
 ```
 
 ## 许可证
